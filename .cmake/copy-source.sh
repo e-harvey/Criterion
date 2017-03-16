@@ -22,8 +22,8 @@ add_to_sources() {
   mkdir -p "$DEST_DIR"
   "$CURDIR/git-archive-all.sh" --format tar -- - | tar -x -C "$DEST_DIR"
 
-  add_to_sources https://github.com/Snaipe/libcsptr     dependencies/libcsptr   0d52904
-  add_to_sources https://github.com/Snaipe/dyncall      dependencies/dyncall    51e79a8
-  add_to_sources https://github.com/nanomsg/nanomsg     dependencies/nanomsg    7e12a20
-  add_to_sources https://github.com/diacritic/BoxFort   dependencies/boxfort    7ed0cf2
+  add_to_sources git@github.com:Snaipe/libcsptr.git     dependencies/libcsptr   0d52904
+  add_to_sources git@github.com:Snaipe/dyncall.git      dependencies/dyncall    51e79a8
+  add_to_sources git@github.com:nanomsg/nanomsg.git     dependencies/nanomsg    7e12a20
+  add_to_sources git@github.com:diacritic/BoxFort.git   dependencies/boxfort    7ed0cf2
 )
